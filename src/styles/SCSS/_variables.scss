@@ -3,3 +3,40 @@ $headerColor_top: #6E26FF;
 $headerColor_bottom: #000000;
 $sectionColor: #17171F;
 $colorStars: #EFAB00;
+$borderGray: #C9CDD4;
+$colorShadow: #0000000f;
+
+.btn-otherOption{
+    background-color: white;
+    color: $borderGray;
+    border: 2px solid $borderGray;
+    font-weight: bold;
+}
+
+.btn-otherOption:hover{
+    border: 2px solid $borderGray;
+    color: $borderGray;
+    font-weight: bold;
+}
+
+.btn-dropdown{
+    border: none;
+    color: white;
+}
+
+.btn-dropdown:hover{
+    border: none;
+    background-color: $colorShadow;
+    color: white;
+
+}
+
+.btn-no{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.btn-no:hover{
+    background-color: $colorShadow;
+    border: none;
+}

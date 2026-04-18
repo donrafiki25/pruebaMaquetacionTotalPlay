@@ -16,21 +16,40 @@
         color: white;
         text-align: center;
         padding: 20px;
+        #carousel{
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 0 30px;
+        }
+        #carousel::-webkit-scrollbar{
+            display: none;
+        }
         button{
             margin: 20px;
         }
     }
     #body-section-comments{
         text-align: center;
-        padding: 20px;
+        h1, p{
+            padding: 20px;
+        }
+        // padding: 20px;
         #comments-names{
-            // button{
-            //     margin: 20px 0 0 20px;
-            // }
+            display: flex;
+            
+            overflow-x: auto;
+            scrollbar-width: none;
+            button{
+                flex: 0 0 auto;
+                margin-left: 20px;
+            }
         }
         #comments-stars{
             color: vars.$colorStars;
             font-size: 30px;
+            padding: 20px;
             i{
                 margin: 20px 0 0 20px;
             }
