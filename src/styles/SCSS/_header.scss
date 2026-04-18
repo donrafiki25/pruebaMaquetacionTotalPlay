@@ -1,10 +1,55 @@
 @use './variables.scss' as vars;
 
-#header{
-    #header-top{
-        background-color: vars.$headerColor_top;
-    }
-    #header-bottom{
+// @media (min-width: 376px){
+    #header{
         background-color: vars.$headerColor_bottom;
-    }
+        color: white;
+        
+    
+        #header-top-mobile{
+            background-color: vars.$headerColor_top;
+            padding: 0 20px;
+            #header-top-icons > img{
+                max-height: 30px !important;
+            }
+            .btn-link{
+                color: white;
+            }
+        }
+        #header-bottom-mobile{
+            padding: 0 20px;
+            #avatar_icon{
+                text-align: center;
+            }
+            
+        }
+        // @media (min-width: 820px) and (max-width: 1440px){
+        //     #header-top-desktop{
+        //         background-color: vars.$headerColor_top;
+        //         display: block;
+        //     }
+        //     #header-bottom-desktop{
+
+        //     }
+        // }
 }
+    #body{
+        #body-section-ads{
+            text-align: center;
+            padding: 20px;
+            button{
+                margin: 20px;
+            }
+        }
+        #body-section-plans{
+            background-color: vars.$sectionColor;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            button{
+                margin: 20px;
+            }
+        }
+    }
+//}
+

@@ -1,8 +1,39 @@
-#header #header-top {
-  background-color: #6E26FF;
-}
-#header #header-bottom {
+#header {
   background-color: #000000;
+  color: white;
+}
+#header #header-top-mobile {
+  background-color: #6E26FF;
+  padding: 0 20px;
+}
+#header #header-top-mobile #header-top-icons > img {
+  max-height: 30px !important;
+}
+#header #header-top-mobile .btn-link {
+  color: white;
+}
+#header #header-bottom-mobile {
+  padding: 0 20px;
+}
+#header #header-bottom-mobile #avatar_icon {
+  text-align: center;
+}
+
+#body #body-section-ads {
+  text-align: center;
+  padding: 20px;
+}
+#body #body-section-ads button {
+  margin: 20px;
+}
+#body #body-section-plans {
+  background-color: #17171F;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+#body #body-section-plans button {
+  margin: 20px;
 }
 
 /*# sourceMappingURL=App.css.map */
