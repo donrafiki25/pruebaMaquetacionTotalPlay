@@ -10,6 +10,8 @@ import avatar from '../assets/user_icon.png';
 
 import awards_img from '../assets/Award_icons.png';
 import PROFECO from '../assets/PROFECO.png';
+import awardsAndProfeco from '../assets/Awards&PROFECO.png';
+import carousselImg from '../assets/Caroussel.png';
 
 export default function App() {
 
@@ -19,12 +21,10 @@ export default function App() {
         {/* <div id='header-top-desktop' style={{display: 'none'}}>El internet mas premiado de México VER PAQUETES</div> */}
         <div id='header-top-mobile'>
           <div id='header-top-icons' className='row align-items-center'>
-            <div className='col align-self-center'>
-              <img src={PROFECO} className='img-fluid'></img>
+            <div className='col'>
+              <img src={awardsAndProfeco} className='img-fluid'></img>
             </div>
-            <div className='col align-self-center'>
-              <img src={awards_img} className='img-fluid'></img>
-            </div>
+            
           </div>
           <div id='header-top-text'>
             <button type='button' className='btn btn-link'>Descarga la App Totalplay y contrata ahora<i className='bi bi-chevron-right'></i></button>
@@ -32,9 +32,9 @@ export default function App() {
           
         </div>
         <div id='header-bottom-mobile' className='toolbar'>
-          <div className='row align-items-center'>
-            <div className='col'>
-              <button className='btn btn-outline-primary'><i className='bi bi-list'></i></button>
+          <div className='row align-items-center' id='threeItems'>
+            <div className='col' id='hamburgerMenu'>
+              <i className='bi bi-list'></i>
             </div>
             <div className='col'>
               <img src={LogoLong} className='img-fluid'></img>
@@ -70,6 +70,9 @@ export default function App() {
           <img src={Img_Gadgets} className='img-fluid'></img>
           <button className='btn btn-dark btn-lg rounded-pill'>Ver paquetes<i className='bi bi-chevron-right'></i></button>
           <p>Cuando el partido importa, la conexión también: cada jugada, sin interrupciones</p>
+          <div>
+            <img src={carousselImg}></img>
+          </div>
         </div>
         <div id='body-section-plans'>
           <h1>Nuestros planes más vendidos</h1>
@@ -78,9 +81,28 @@ export default function App() {
         </div>
         <div id='body-section-comments'>
           <h1>Más de 10 millones confían en nosotros</h1>
-          {/* <img src={award_img}></img> */}
-          USERS
+          <div id='comments-names' className='overflow-visible'>
+            <button className='btn btn-dark rounded-pill'>Ángelica</button>
+            <button className='btn btn-dark rounded-pill'>Nery</button>
+            <button className='btn btn-dark rounded-pill'>Ivonne</button>
+            <button className='btn btn-dark rounded-pill'>Jose Jair</button>
+          </div>
+          <div id='comments-stars'>
+            <i className='bi bi-star-fill'></i>
+            <i className='bi bi-star-fill'></i>
+            <i className='bi bi-star-fill'></i>
+            <i className='bi bi-star-fill'></i>
+            <i className='bi bi-star-fill'></i>
+          </div>
+          <div id='comments_text'>
+            <p>Tengo más de 10 años @totalplaymx y si bien no es barato durante todos estos años ha sido el mejor servicio de todos. He tenido 2 fallas en 10 años y el soporte siempre fue muy rápido.</p>
+          </div>
         </div>
+        <div id='body-section-awards'>
+            <h1>Totalplay tiene la red fija más rápida de México, avalado por Ookla speedtest* y NPerf</h1>
+            <img src={awards_img}></img>
+            <p>*Análisis realizado por Ookla ® de los datos de Speedtest intelligence ® para Q2-Q3 2024.</p>
+          </div>
       </div>
       {/* <div id='footer'></div> */}
     </>

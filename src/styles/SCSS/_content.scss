@@ -1,0 +1,51 @@
+@use './variables.scss' as vars;
+
+#body{
+    #body-section-ads{
+        text-align: center;
+        padding: 20px;
+        button{
+            margin: 20px;
+        }
+        p{
+            color: #585858;
+        }
+    }
+    #body-section-plans{
+        background-color: vars.$sectionColor;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        button{
+            margin: 20px;
+        }
+    }
+    #body-section-comments{
+        text-align: center;
+        padding: 20px;
+        #comments-names{
+            // button{
+            //     margin: 20px 0 0 20px;
+            // }
+        }
+        #comments-stars{
+            color: vars.$colorStars;
+            font-size: 30px;
+            i{
+                margin: 20px 0 0 20px;
+            }
+        }
+    }
+    #body-section-awards{
+            background-color: vars.$sectionColor;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            img{
+                margin: 20px 0;
+            }
+            p{
+                margin: 0;
+            }
+        }
+}

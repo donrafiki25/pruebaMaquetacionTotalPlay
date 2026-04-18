@@ -9,17 +9,29 @@
         #header-top-mobile{
             background-color: vars.$headerColor_top;
             padding: 0 20px;
-            #header-top-icons > img{
-                max-height: 30px !important;
+            #header-top-icons {
+                text-align: center;
             }
-            .btn-link{
+            #header-top-text{
                 color: white;
+                text-align: center;
+                .btn-link{
+                    font-size: 14px;
+                    color: white;
+                }
             }
+            
         }
         #header-bottom-mobile{
-            padding: 0 20px;
-            #avatar_icon{
-                text-align: center;
+            padding: 10px 20px;
+            i{
+                font-size: 30px;
+            }
+            #avatarIcon{
+                // text-align: center;
+                img{
+                    height: 40px;
+                }
             }
             
         }
@@ -33,23 +45,6 @@
         //     }
         // }
 }
-    #body{
-        #body-section-ads{
-            text-align: center;
-            padding: 20px;
-            button{
-                margin: 20px;
-            }
-        }
-        #body-section-plans{
-            background-color: vars.$sectionColor;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            button{
-                margin: 20px;
-            }
-        }
-    }
+    
 //}
 
