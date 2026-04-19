@@ -6,17 +6,19 @@
 * Demostrar buenas prácticas de accesibilidad, semántica HTML y performance básica.
 
 ## Tecnologias usadas
-HTML
-CSS
-SCSS
-Javascript
-Typescript
-React
-Bootstrap
+* HTML
+* CSS
+* SCSS
+* Javascript
+* Typescript
+* React
+* Bootstrap
 
-## Instalación
+## Instalación y ejecución local
 * Para instalarlo, se necesita nodeJS y npm: https://nodejs.org/en/download
 * Teniendo npm, correr dentro de la carpeta principal la siguiente linea ```npm i``` para instalar todos los paquetes.
 * Para correr el proyecto, correr con el siguiente comando: ```npm run dev``` y abrir en el link y puerto que indique (normalmente es en http://localhost:5173/). La consola debe quedarse abierta.
 * Si se necesita correr SCSS correr con el siguiente comando en otra consola ```sass --watch ./path/to/folder/scss:./path/to/folder/css``` y dejar abierta.
 * Si se quiere cortar el proceso, usar _CTRL + C_ 
+
+## Deploy

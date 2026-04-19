@@ -59,7 +59,7 @@
 #header #header-top-desktop {
   display: none;
 }
-@media (min-width: 820px) {
+@media (min-width: 1440px) {
   #header #header-top-mobile {
     display: none;
   }
@@ -83,7 +83,7 @@
 #header #header-bottom-mobile #threeItems {
   /* Desktop */
 }
-@media (min-width: 820px) {
+@media (min-width: 1440px) {
   #header #header-bottom-mobile #threeItems .menu-btn {
     display: none;
   }
@@ -120,7 +120,7 @@
 #header #header-bottom-mobile {
   /* Desktop */
 }
-@media (min-width: 820px) {
+@media (min-width: 1440px) {
   #header #header-bottom-mobile #dropdownAndImg {
     display: none;
   }
@@ -155,7 +155,7 @@
 #body #body-section-plans button {
   margin: 20px;
 }
-@media (min-width: 820px) {
+@media (min-width: 1440px) {
   #body #body-section-plans #carousel {
     justify-content: center;
   }
@@ -187,7 +187,15 @@
 #body #body-section-comments #comments-stars i {
   margin: 20px 0 0 20px;
 }
-@media (min-width: 820px) {
+@media (min-width: 768px) and (max-width: 1439.8px) {
+  #body #body-section-comments #commentsWithAward #comments-area {
+    text-align: center;
+  }
+  #body #body-section-comments #commentsWithAward #comments-area #comments-names {
+    display: inline-block;
+  }
+}
+@media (min-width: 1440px) {
   #body #body-section-comments {
     display: grid;
     grid-template-rows: auto auto;
@@ -229,13 +237,13 @@
 #body #body-section-awards p {
   margin: 0;
 }
-@media (min-width: 820px) {
+@media (min-width: 1440px) {
   #body #body-section-awards {
     display: none;
   }
 }
 
-@media (min-width: 820px) {
+@media (min-width: 1440px) {
   #header-top-desktop {
     background-color: #6E26FF;
     display: block !important;

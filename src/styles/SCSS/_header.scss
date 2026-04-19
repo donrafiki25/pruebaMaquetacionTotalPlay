@@ -23,7 +23,7 @@
         #header-top-desktop{
             display: none;
         }
-        @media (min-width: 820px) {
+        @media (min-width: 1440px) {
         #header-top-mobile {
             display: none; //HIDE HAMBURGER MENU
             }
@@ -52,7 +52,7 @@
                 }
 
                  /* Desktop */
-                @media (min-width: 820px) {
+                @media (min-width: 1440px) {
                 .menu-btn {
                     display: none; //HIDE HAMBURGER MENU
                 }
@@ -97,7 +97,7 @@
                 }
             }
         /* Desktop */
-        @media (min-width: 820px) {
+        @media (min-width: 1440px) {
         #dropdownAndImg {
             display: none; //HIDE HAMBURGER MENU
             }
