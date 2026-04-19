@@ -26,52 +26,72 @@ export default function App() {
     <>
     {/* HEADER, uses _header.scss for styles */}
       <div id='header'>
-        {/* <div id='header-top-desktop' style={{display: 'none'}}>El internet mas premiado de México VER PAQUETES</div> */}
         <div id='header-top-mobile'>
           <div id='header-top-icons' className='row align-items-center'>
             <div className='col'>
               <img src={awardsAndProfeco} className='img-fluid'></img>
             </div>
-            
           </div>
           <div id='header-top-text'>
             <button type='button' className='btn btn-link'>Descarga la App Totalplay y contrata ahora<i className='bi bi-chevron-right'></i></button>
+          </div> 
+        </div>
+        {/* DESKTOP TOP BAR */}
+        <div id='header-top-desktop'>
+          <div id='header-desktop-imglink'>
+            <div className='img-top'>
+              <img src={awardsAndProfeco} className='img-fluid'></img>
+            </div>
+            <div className='text-top'>El internet mas premiado de México <button className='btn btn-link'>Ver paquetes<i className='bi bi-chevron-right'></i></button></div>
           </div>
-          
         </div>
         <div id='header-bottom-mobile' className='toolbar'>
-          <div className='row align-items-center' id='threeItems'>
-            {/* HAMBURGER MENU START */}
-            <div className='col' id='hamburgerMenu'>
-              
-              <button className="btn btn-no" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTP" aria-controls="offcanvasExample">
-                <i className='bi bi-list'></i>
+          <div  id='threeItems'>
+            {/* NAVBAR MENU START */}
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span className="navbar-toggler-icon"></span>
               </button>
 
-              <div className="offcanvas offcanvas-start" id="offcanvasTP" aria-labelledby="offcanvasLabel">
-              <div className="offcanvas-header">
-                <h5 className="offcanvas-title" id="offcanvasLabel">Totalplay</h5>
-                <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <a className="navbar-brand mx-auto mx-lg-0" href="#">
+                <img src={LogoLong} className='img-fluid'></img>
+              </a>
+              <div className='ms-auto d-lg-none' id='avatarIcon'>
+                <img src={avatar} className='img-fluid'></img>
               </div>
-              <div className="offcanvas-body">
-                <ul id='offcanvas_options'>
-                  <li><a href="#">Nuestras ventajas</a></li>
-                  <li><a href="#">Paquetes</a></li>
-                  <li><a href="#">Soporte</a></li>
-                  <li><a href="#">Servicios</a></li>
+
+              <div className="collapse navbar-collapse" id="navMenu">
+                <ul className="navbar-nav ms-lg-4">
+                  <li className="nav-item"><a className="nav-link" href="#">Ventajas</a></li>
+                  <li className="nav-item"><a className="nav-link" href="#">Paquetes</a></li>
+                  <li className="nav-item"><a className="nav-link" href="#">Soporte</a></li>
+                  <li className="nav-item"><a className="nav-link" href="#">Servicios</a></li>
                 </ul>
+
+                <div className="ms-auto d-none d-lg-block">
+                  <div id='dropdownAccountButton'>
+                    {/* DROPDOWN START */}
+                    <div className='dropdown col dropdownCity'>
+                      <button type="button" className="btn btn-dropdown dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ciudad de México<i className='bi bi-chevron-down'></i>
+                      </button>
+                      <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="#">Puebla</a></li>
+                        <li><button className="dropdown-item" type="button">Estado de México</button></li>
+                        <li><button className="dropdown-item" type="button">Monterrey</button></li>
+                      </ul>
+                    </div>
+                  {/* DROPDOWN END */}
+                    <div>
+                      <button className="btn btn-light rounded-pill"><i className="bi bi-person"></i> Cuenta</button>
+                    </div>
+                  </div> 
+                </div>
               </div>
-            </div>
-            </div>
-            {/* HAMBURGER MENU END */}
-            <div className='col'>
-              <img src={LogoLong} className='img-fluid'></img>
-            </div>
-            <div className='col d-flex justify-content-end' id='avatarIcon'>
-              <img src={avatar} className='img-fluid'></img>
-            </div>
+            </nav>
+            {/* NAVBAR MENU END */}
           </div>
-          <div className='row align-items-center' id='dropdownAndImg'>
+          <div className='align-items-center' id='dropdownAndImg'>
             {/* DROPDOWN START */}
             <div className='dropdown col' id='dropdownCity'>
               <button type="button" className="btn btn-dropdown dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">

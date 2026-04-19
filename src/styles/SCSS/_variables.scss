@@ -40,3 +40,7 @@ $colorShadow: #0000000f;
     background-color: $colorShadow;
     border: none;
 }
+
+.dropdown-toggle::after{
+    display: none;
+}

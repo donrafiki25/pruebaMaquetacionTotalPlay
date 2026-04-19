@@ -1,0 +1,24 @@
+@use './variables.scss' as vars;
+
+@media (min-width: 820px){
+            #header-top-desktop{
+                background-color: vars.$headerColor_top;
+                display: block !important;
+                #header-desktop-imglink{
+                    display: flex;
+                    justify-content: center;
+                    .img-top{
+                        padding-right: 20px;
+                    }
+                    .text-top{
+                        align-self: center;
+                        .btn-link{
+                            color: white;
+                        }
+                    }
+                }
+            }
+            #header-bottom-desktop{
+
+            }
+        }
