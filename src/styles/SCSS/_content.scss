@@ -26,7 +26,6 @@
             overflow-x: auto;
             scroll-snap-type: x mandatory;
             padding: 0 30px;
-            justify-content: center;
         }
         #carousel::-webkit-scrollbar{
             display: none;
@@ -35,6 +34,15 @@
             margin: 20px;
         }
     }
+
+    @media(min-width: 820px){
+        #body-section-plans{
+            #carousel{
+                justify-content: center ;
+            }
+        }
+    }
+
     #body-section-comments{
         #comments-award{
             display: none;
@@ -51,7 +59,8 @@
             scrollbar-width: none;
             button{
                 flex: 0 0 auto;
-                margin-left: 40px;
+                margin-left: 15px;
+                min-width: 100px;
             }
         }
         #comments-stars{
@@ -89,7 +98,10 @@
                     }
                     #comments_text{
                         font-size: 32px;
+                        font-weight: 400;
                         text-align: left;
+                        text-wrap: balance;
+                        max-width: 80%;
                     }
                 }
             }

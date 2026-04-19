@@ -48,7 +48,7 @@ export default function App() {
         <div id='header-bottom-mobile' className='toolbar'>
           <div  id='threeItems'>
             {/* NAVBAR MENU START */}
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+            <nav className="navbar navbar-expand-lg navbar-dark">
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -62,10 +62,10 @@ export default function App() {
 
               <div className="collapse navbar-collapse" id="navMenu">
                 <ul className="navbar-nav ms-lg-4">
-                  <li className="nav-item"><a className="nav-link" href="#">Ventajas</a></li>
-                  <li className="nav-item"><a className="nav-link" href="#">Paquetes</a></li>
-                  <li className="nav-item"><a className="nav-link" href="#">Soporte</a></li>
-                  <li className="nav-item"><a className="nav-link" href="#">Servicios</a></li>
+                  <li className="nav-item"><a className="nav-link" href="#">Nuestras ventajas</a></li>
+                  <li className="nav-item"><a className="nav-link" href="#">Paquetes <i className='bi bi-chevron-down'></i></a></li>
+                  <li className="nav-item"><a className="nav-link" href="#">Soporte <i className='bi bi-chevron-down'></i></a></li>
+                  <li className="nav-item"><a className="nav-link" href="#">Servicios <i className='bi bi-chevron-down'></i></a></li>
                 </ul>
 
                 <div className="ms-auto d-none d-lg-block">
@@ -153,7 +153,7 @@ export default function App() {
                 <i className='bi bi-star-fill'></i>
               </div>
               <div id='comments_text'>
-                <p>Tengo más de 10 años @totalplaymx y si bien no es barato durante todos estos años ha sido el mejor servicio de todos. He tenido 2 fallas en 10 años y el soporte siempre fue muy rápido.</p>
+                <p className='font-weight-light'>Tengo más de 10 años @totalplaymx y si bien no es barato durante todos estos años ha sido el mejor servicio de todos. He tenido 2 fallas en 10 años y el soporte siempre fue muy rápido.</p>
               </div>
           </div>
           
