@@ -4,6 +4,10 @@
     #body-section-ads{
         text-align: center;
         padding: 20px;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        
         button{
             margin: 20px;
         }
@@ -22,6 +26,7 @@
             overflow-x: auto;
             scroll-snap-type: x mandatory;
             padding: 0 30px;
+            justify-content: center;
         }
         #carousel::-webkit-scrollbar{
             display: none;
@@ -31,6 +36,9 @@
         }
     }
     #body-section-comments{
+        #comments-award{
+            display: none;
+        }
         text-align: center;
         h1, p{
             padding: 20px;
@@ -43,7 +51,7 @@
             scrollbar-width: none;
             button{
                 flex: 0 0 auto;
-                margin-left: 20px;
+                margin-left: 40px;
             }
         }
         #comments-stars{
@@ -55,16 +63,54 @@
             }
         }
     }
-    #body-section-awards{
-            background-color: vars.$sectionColor;
-            text-align: center;
+
+    @media(min-width: 820px){
+        #body-section-comments{
+            display: grid;
+            grid-template-rows: auto auto;
             padding: 20px;
-            color: white;
-            img{
-                margin: 20px 0;
+            #commentsWithAward{
+                display: grid;
+                grid-template-columns: auto auto;
+                #comments-award{
+                    display: flex;
+                }
+                #comments-area{
+                    #comments-names{
+                        button{
+                            margin-left: 20px;
+                        }
+                    }
+                    #comments-stars{
+                        text-align: left;
+                        i{
+                            margin: 20px 20px 0 0;
+                        }
+                    }
+                    #comments_text{
+                        font-size: 32px;
+                        text-align: left;
+                    }
+                }
             }
-            p{
-                margin: 0;
-            }
+            
         }
+    }
+    #body-section-awards{
+        background-color: vars.$sectionColor;
+        text-align: center;
+        padding: 20px;
+        color: white;
+        img{
+            margin: 20px 0;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    @media(min-width: 820px){
+        #body-section-awards{
+            display: none;
+        }
+    }
 }

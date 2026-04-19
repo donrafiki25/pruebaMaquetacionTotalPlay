@@ -140,12 +140,16 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 0 30px;
+  justify-content: center;
 }
 #body #body-section-plans #carousel::-webkit-scrollbar {
   display: none;
 }
 #body #body-section-plans button {
   margin: 20px;
+}
+#body #body-section-comments #comments-award {
+  display: none;
 }
 #body #body-section-comments {
   text-align: center;
@@ -160,7 +164,7 @@
 }
 #body #body-section-comments #comments-names button {
   flex: 0 0 auto;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 #body #body-section-comments #comments-stars {
   color: #EFAB00;
@@ -169,6 +173,33 @@
 }
 #body #body-section-comments #comments-stars i {
   margin: 20px 0 0 20px;
+}
+@media (min-width: 820px) {
+  #body #body-section-comments {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 20px;
+  }
+  #body #body-section-comments #commentsWithAward {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #body #body-section-comments #commentsWithAward #comments-award {
+    display: flex;
+  }
+  #body #body-section-comments #commentsWithAward #comments-area #comments-names button {
+    margin-left: 20px;
+  }
+  #body #body-section-comments #commentsWithAward #comments-area #comments-stars {
+    text-align: left;
+  }
+  #body #body-section-comments #commentsWithAward #comments-area #comments-stars i {
+    margin: 20px 20px 0 0;
+  }
+  #body #body-section-comments #commentsWithAward #comments-area #comments_text {
+    font-size: 32px;
+    text-align: left;
+  }
 }
 #body #body-section-awards {
   background-color: #17171F;
@@ -181,6 +212,11 @@
 }
 #body #body-section-awards p {
   margin: 0;
+}
+@media (min-width: 820px) {
+  #body #body-section-awards {
+    display: none;
+  }
 }
 
 @media (min-width: 820px) {

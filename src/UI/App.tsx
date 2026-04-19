@@ -114,17 +114,14 @@ export default function App() {
       {/* BODY, uses _content.scss for styles */}
       <div id='body'>
         <div id='body-section-ads'>
-          <h1>No te pierdas ni un solo momento del Juego con el internet de Totalplay</h1>
-          <img src={Img_Gadgets} className='img-fluid'></img>
-          <button className='btn btn-dark btn-lg rounded-pill'>Ver paquetes<i className='bi bi-chevron-right'></i></button>
-          <p>Cuando el partido importa, la conexión también: cada jugada, sin interrupciones</p>
-          <div>
-            <img src={carouselAds}></img>
-          </div>
+          <div><h1>No te pierdas ni un solo momento del Juego con el internet de Totalplay</h1></div>
+          <div><img src={Img_Gadgets} className='img-fluid'></img></div>
+          <div><button className='btn btn-dark btn-lg rounded-pill'>Ver paquetes<i className='bi bi-chevron-right'></i></button></div>
+          <div><p>Cuando el partido importa, la conexión también: cada jugada, sin interrupciones</p></div>
+          <div><img src={carouselAds}></img></div>
         </div>
         <div id='body-section-plans'>
           <h1>Nuestros planes más vendidos</h1>
-          {/* <img src={plans_img} className='img-fluid'></img> */}
           <div id='carousel'>
             <img src={plan_150} className='img-fluid'></img>
             <img src={plan_250} className='img-fluid'></img>
@@ -137,22 +134,31 @@ export default function App() {
         </div>
         <div id='body-section-comments'>
           <h1>Más de 10 millones confían en nosotros</h1>
-          <div id='comments-names'>
-            <button className='btn btn-dark rounded-pill'>Ángelica</button>
-            <button className='btn btn-otherOption rounded-pill'>Nery</button>
-            <button className='btn btn-otherOption rounded-pill'>Ivonne</button>
-            <button className='btn btn-otherOption rounded-pill'>Jose Jair</button>
+          <div id='commentsWithAward'>
+            <div id='comments-award'>
+              <img src={award_img}></img>
+            </div>
+            <div id='comments-area'>
+              <div id='comments-names'>
+                <button className='btn btn-dark btn-lg rounded-pill'>Ángelica</button>
+                <button className='btn btn-otherOption bt-lg rounded-pill'>Nery</button>
+                <button className='btn btn-otherOption bt-lg rounded-pill'>Ivonne</button>
+                <button className='btn btn-otherOption bt-lg rounded-pill'>Jose Jair</button>
+              </div>
+              <div id='comments-stars'>
+                <i className='bi bi-star-fill'></i>
+                <i className='bi bi-star-fill'></i>
+                <i className='bi bi-star-fill'></i>
+                <i className='bi bi-star-fill'></i>
+                <i className='bi bi-star-fill'></i>
+              </div>
+              <div id='comments_text'>
+                <p>Tengo más de 10 años @totalplaymx y si bien no es barato durante todos estos años ha sido el mejor servicio de todos. He tenido 2 fallas en 10 años y el soporte siempre fue muy rápido.</p>
+              </div>
           </div>
-          <div id='comments-stars'>
-            <i className='bi bi-star-fill'></i>
-            <i className='bi bi-star-fill'></i>
-            <i className='bi bi-star-fill'></i>
-            <i className='bi bi-star-fill'></i>
-            <i className='bi bi-star-fill'></i>
+          
           </div>
-          <div id='comments_text'>
-            <p>Tengo más de 10 años @totalplaymx y si bien no es barato durante todos estos años ha sido el mejor servicio de todos. He tenido 2 fallas en 10 años y el soporte siempre fue muy rápido.</p>
-          </div>
+          
         </div>
         <div id='body-section-awards'>
             <h1>Totalplay tiene la red fija más rápida de México, avalado por Ookla speedtest* y NPerf</h1>
