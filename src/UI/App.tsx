@@ -6,7 +6,6 @@ import '../styles/CSS/App.css';
 import LogoLong from '../assets/Logo_Totalplay_long.svg';
 import Img_Gadgets from '../assets/Totalplay_gadgets.png';
 
-import plans_img from '../assets/Plans_complete.png';
 import plan_150 from '../assets/Plan_150mb.png';
 import plan_250 from '../assets/Plan_250mb.png';
 import plan_350 from '../assets/Plan_350mb.png';
